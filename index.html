@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet"> 
+</head>
+<body>
+  <section id="top">
+    <form>
+      <label>Input some numbers. Or don't. I'm a label not a cop.</label>
+      <input id="input" type="number"/>
+      <input id="add-button" type=button onclick="listNumbers()" value="Add Numbers"/>
+      <input id="clear-button" type=button onclick="clearNumbers()" value="Clear Numbers"/>
+    </form>
+  </section>
+  <section id="bottom">
+    <p>Here are your numbers:</p>
+    <div id="number-box"> 
+    </div>
+    <p>Number of numbers entered:</p>
+    <div id="length-box">
+    </div>
+    <p>Sum of numbers entered:</p>
+    <div id="total-box">
+    </div>
+    <p>Average of numbers entered:</p>
+    <div id="average-box">
+    </div>
+  </section>
+  <script type="text/javascript" src="calculations.js"></script>
+</body>  
+</html>
